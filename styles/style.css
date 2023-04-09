@@ -1,0 +1,130 @@
+
+html, body {
+    width: 100%;
+    min-height: 2000px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+#name {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+}
+
+nav a {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    margin-bottom: 20px;
+    border-radius: 60px;
+    transition: .6s ease-in-out;
+}
+
+nav a:hover {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+}
+
+.hero-image {
+    width: 20%;
+    margin: 40px;
+    transition: .6s ease-in-out;
+}
+
+.hero-image:hover {
+    width: 21%;
+}
+
+.hero-text {
+    margin: 40px;
+}
+
+
+#test {
+    margin-top: 300px;
+    background-color: green;
+    background-image: url("/images/paper1.jpg");
+    object-fit:fill ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;
+}
+
+
+#test {
+    margin-top: 300px;
+    background-color: green;
+    background-image: url("/images/paper1.jpg");
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+
+
+
+
+.fade {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade.fade-out {
+  opacity: 0;
+}
+
+
+
+
+  
