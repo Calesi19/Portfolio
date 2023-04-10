@@ -1,7 +1,7 @@
 
 html, body {
     width: 100%;
-    min-height: 2000px;
+    min-height: 100vh;
 }
 
 * {
@@ -21,6 +21,10 @@ header {
 
     width: 100%;
     z-index: 999;
+
+    background-color: white;
+    box-shadow: 00px 0px 20px 40px white;
+
 }
 
 nav {
@@ -30,9 +34,6 @@ nav {
 
 #name {
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 25px;
 }
 
 nav a {
@@ -46,29 +47,33 @@ nav a {
 }
 
 nav a:hover {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
     color: white;
     background-color: black;
 }
 
 main {
-    justify-content: center;
+    
     align-items: center;
     width: 100%;
-    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
 }
 
 .hero {
+    padding-top: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3%;
-
 }
 
 .hero-image {
+    
+    max-width: 350px;
+    min-width: 250px;
     width: 20%;
     margin: 40px;
     transition: .6s ease-in-out;
@@ -79,50 +84,114 @@ main {
 }
 
 .hero-text {
-    margin: 40px;
+    max-width: 20%;
 }
 
 
-#test {
-    margin-top: 300px;
-    background-color: green;
-    background-image: url("/images/paper1.jpg");
-    object-fit:fill ;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 400px;
+
+#background {
+    text-align: center;
 }
 
 
-#test {
-    margin-top: 300px;
+#languages {
+    display: flex;
+    gap: 10px;
+}
+
+#languages img{
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*Test*/
+
+
+
+.slider {
     background-color: green;
-    background-image: url("/images/paper1.jpg");
-    object-fit: fill;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 400px;
+    height: 100px;
+    margin: auto;
     position: relative;
-  }
-
-
-
-
-
-.fade {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+    width: 90%;
+    display: grid;
+    place-items: center;
 }
 
-.fade.fade-out {
-  opacity: 0;
+.slide-track {
+    display: flex;
+    width: calc(250px * 14);
+    animation: scroll 400s linear infinite;
 }
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+    
+}
+
+.slide {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slider img {
+    height: 100%
+}
+
+.slider img:hover {
+    transform: translateZ(20px);
+    transition: transform 1.5s;
+}
+
+
+/* Slider Shadows */
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: fixed;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left:0;
+}
+
+.slider::after {
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

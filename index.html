@@ -12,22 +12,23 @@
 
     <header>
 
-        <div id="name">Carlos Lespin</div>
+        <div id="name">
+            <strong>Carlos Lespin</strong>
+        
+        </div>
         
 
         <nav>
             <a href="index.html">Home</a>
             <a href="aboutme.html">About Me</a>
             <a href="resume.html">Resume</a>
-
-
         </nav>
 
 
     </header>
 
 
-    <main class="fade">
+    <main>
 
         <div class="hero">
 
@@ -35,12 +36,99 @@
 
             <div class="hero-text">
                 <h2>I'm a Software Engineer Student.</h2>
-                I'm currently attending Brigham Young University - Idaho.
-
+                I'm currently attending Brigham Young University - Idaho. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </div>
 
+        </div>
+
+
+        <div id="background">
+            <h2>Background</h2>
+
+
+            <div id="languages">
+                <img src="images/c++.png" alt="C++">
+                <img src="images/python.webp" alt="Python">
+                <img src="images/html.png" alt="HTML">
+                <img src="images/css.png" alt="CSS">
+                <img src="images/javascript.png" alt="Javascript">
+                <img src="images/flutter.png" alt="Flutter">
+                <img src="images/mysql.png" alt="MySQL">
+            </div>
 
         </div>
+
+
+
+
+        <div class="slider">
+            <div class="slide-track">
+
+                <div class="slide">
+                    <img src="images/c++.png" alt="C++">
+                </div>
+
+                <div class="slide">
+                    <img src="images/python.webp" alt="Python">
+                </div>
+
+                <div class="slide">
+                    <img src="images/html.png" alt="HTML">
+                </div>
+
+                <div class="slide">
+                    <img src="images/css.png" alt="CSS">
+                </div>
+
+                <div class="slide">
+                    <img src="images/javascript.png" alt="Javascript">
+                </div>
+
+                <div class="slide">
+                    <img src="images/flutter.png" alt="Flutter">
+                </div>
+
+                <div class="slide">
+                    <img src="images/mysql.png" alt="MySQL">
+                </div>
+
+                <!-- 
+                Same set for second time.
+                -->
+
+
+                <div class="slide">
+                    <img src="images/c++.png" alt="C++">
+                </div>
+
+                <div class="slide">
+                    <img src="images/python.webp" alt="Python">
+                </div>
+
+                <div class="slide">
+                    <img src="images/html.png" alt="HTML">
+                </div>
+
+                <div class="slide">
+                    <img src="images/css.png" alt="CSS">
+                </div>
+
+                <div class="slide">
+                    <img src="images/javascript.png" alt="Javascript">
+                </div>
+
+                <div class="slide">
+                    <img src="images/flutter.png" alt="Flutter">
+                </div>
+
+                <div class="slide">
+                    <img src="images/mysql.png" alt="MySQL">
+                </div>
+
+
+            </div>
+        </div>
+        
 
 
         
@@ -52,15 +140,14 @@
 
     </footer>
 
-   <script>
-        const fade = document.querySelector('.fade');
+    
+    <script>
+        
 
-        window.addEventListener('scroll', () => {
-        const distance = window.scrollY;
-        const opacity = 1 - (distance / fade.offsetHeight);
-        fade.style.opacity = opacity.toFixed(2);
-        });
-   </script>
+
+
+
+    </script>
     
 </body>
 </html>
