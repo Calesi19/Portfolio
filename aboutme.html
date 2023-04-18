@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/stack.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +20,30 @@
     <main>
 
         
-        <div id="matrix"></div>
+        <div class="container">
+
+            <div class="card" style="--i:1">
+                <div class="content" style="--j:1">
+                    <h2>Card 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
+                </div>
+            </div>
+
+            <div class="card" style="--i:1">
+                <div class="content" style="--j:1">
+                    <h2>Card 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
+                </div>
+            </div>
+
+            <div class="card" style="--i:1">
+                <div class="content" style="--j:1">
+                    <h2>Card 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
+                </div>
+            </div>
+
+        </div>
 
           
 
@@ -34,33 +57,7 @@
 
     </footer>
 
-    <script>
-        const matrix = document.getElementById('matrix');
-        const columns = Math.floor(window.innerWidth / 20);
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
-        function createChar() {
-        return chars[Math.floor(Math.random() * chars.length)];
-        }
-
-        function createColumn() {
-        const column = document.createElement('div');
-        column.style.position = 'absolute';
-        column.style.top = '0';
-        column.style.left = `${Math.floor(Math.random() * window.innerWidth)}px`;
-        column.style.width = '20px';
-        column.style.height = `${Math.floor(Math.random() * 100) + 10}px`;
-        column.style.animation = `fall ${Math.floor(Math.random() * 10) + 5}s linear infinite`;
-        column.innerHTML = new Array(Math.floor(Math.random() * 10) + columns).fill(0).map(() => createChar()).join('');
-        return column;
-        }
-
-        for (let i = 0; i < columns; i++) {
-        matrix.appendChild(createColumn());
-}
-
-
-    </script>
     
 </body>
 </html>
