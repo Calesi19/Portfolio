@@ -1,36 +1,22 @@
 
     const toggle = document.getElementById('theme-checkbox');
-    const whiteElements = document.querySelectorAll('.white');
-    const blackElements = document.querySelectorAll('.black')
+    const elements = document.querySelectorAll('.toggle-theme');
 
 
     function setTheme(theme) {
       // Change theme mode saved in local storage.
       localStorage.setItem('theme', theme);
       
-
-      whiteElements.forEach(el => {
+      elements.forEach(el => {
         if (theme === 'night') {
-            el.style.backgroundColor = 'black';
-            el.style.color = 'white';
+            el.classList.add('dark')
         }
         else {
-            el.style.backgroundColor = 'white';
-            el.style.color = 'black';
+            el.classList.remove('dark')
         }
     });
+  }
 
-        blackElements.forEach(el => {
-            if (theme === 'night') {
-                el.style.backgroundColor = 'white';
-                el.style.color = 'black';
-            }
-            else {
-                el.style.backgroundColor = 'black';
-                el.style.color = 'white';
-            }
-    });
-    }
     
   
     function updateThemeFromLocalStorage() {
