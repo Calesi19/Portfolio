@@ -3,68 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Switch</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Glowing Dots Background</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+  background-color: #ffffff; /* Set white background color */
+  background-image: radial-gradient(#ffffff 0%, #ffffff 30%, #f0f0f0 60%, #d0d0d0 100%), 
+                    radial-gradient(#ffffff 0%, #ffffff 20%, #f0f0f0 50%, #d0d0d0 100%), 
+                    radial-gradient(#ffffff 0%, #ffffff 10%, #f0f0f0 40%, #d0d0d0 100%);
+  background-size: 100px 100px; /* Set the size of the dots */
+  background-position: 0 0, 50px 50px, 25px 25px; /* Set the position of the dots */
+}
 
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
+@keyframes glowing {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
 
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+body {
+  /* Same as before */
+}
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 34px;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .slider {
-            background-color: #2196F3;
-        }
-
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  animation: glowing 10s ease-in-out infinite;
+}
     </style>
 </head>
 <body>
-    <label class="toggle-switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-    </label>
+    <canvas id="glowingDots"></canvas>
+    <div class="content">
+        <!-- Add your website content here -->
+    </div>
+    <script>
+
+
+
+    </script>
 </body>
 </html>
