@@ -17,6 +17,8 @@ html, body {
     color: #1d1d1f;
 }
 
+
+
 a {
     text-decoration: none;
     color: #1d1d1f;
@@ -616,6 +618,11 @@ nav a:hover.dark {
 
   .menu__btn {
     display: inline;
+  }
+
+  header {
+    display: flex;
+    height: 55px;
   }
 
 }
