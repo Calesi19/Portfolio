@@ -42,6 +42,7 @@ header.dark {
 }
 
 nav {
+    font-size: smaller;
     display: flex;
     gap: 40px;
 }
@@ -74,6 +75,11 @@ nav a {
 nav a:hover {
     color: #f5f5f7;
     background-color: #1d1d1f;
+}
+
+nav a:hover.dark {
+  color: #1d1d1f;
+  background-color: #f7f5f7;
 }
 
 main {
@@ -210,34 +216,10 @@ button {
 
 
 
-@media screen and (max-width: 667px) {
-
-
-
-    
 
 
     
 
-    
-
-  }
-
-
-
-
-
-    
-
-
-.contact-box {
-    color: #f5f5f7;
-    min-height: 400px;
-    width: 60%;
-    background-color: #1d1d1f;
-    border-radius: 20px;
-
-}
 
 
 
@@ -259,11 +241,27 @@ code {
     position: relative;
 }
 
+.app-window.terminal {
+  background-color: #262626;
+}
+
+.app-window.dark {
+  background-color: #492c47;
+}
+
 .window-header {
     display: flex;
     align-items: center;
     padding: 6px 12px;
     background-color: #f0f0f0;
+}
+
+.window-header.terminal {
+  background-color: #404040;
+}
+
+.window-header.dark {
+  background-color: #503851;
 }
 
 .window-button {
@@ -348,9 +346,6 @@ code {
 
 
 
-nav {
-    font-size: smaller;
-}
 
 /************* Toggle Switch ************/
 
@@ -474,10 +469,7 @@ input:checked + .slider:before {
 
 
 
-nav a:hover.dark {
-    color: #1d1d1f;
-    background-color: #f5f5f7;
-}
+
 
 #typing-title.dark {
     color: #f5f5f7 !important;
@@ -596,7 +588,7 @@ footer {
 
 
 footer.dark {
-  background-color: rgb(20, 16, 21);
+  background-color: rgb(36, 28, 39);
 }
 
 
@@ -704,7 +696,7 @@ footer.dark {
 }
 
 .custom-button {
-
+  
   position: relative;
   bottom: 50px;
   left: calc(50% - 50px);
@@ -746,7 +738,6 @@ footer.dark {
 
 #play-button{
   height: 20px;
-  z-index: 999;
   opacity: 1;
 }
 
