@@ -299,23 +299,35 @@ code {
 
 .typing-title {
     font-family: 'Courier New', Courier, monospace;
-
     width: min-content;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid;
-    animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes blink-caret {
+    animation: typing 4s steps(30, end), blink-caret-black .75s step-end infinite;
+    }
+    
+    .typing-title.dark {
+    animation: typing 4s steps(30, end), blink-caret-white .75s step-end infinite;
+    }
+    
+    @keyframes blink-caret-black {
     from, to {
-        border-color: transparent;
+    border-color: transparent;
     }
     50% {
-        border-color: black;
+    border-color: black;
     }
-}
-
+    }
+    
+    @keyframes blink-caret-white {
+    from, to {
+    border-color: transparent;
+    }
+    50% {
+    border-color: white;
+    }
+    }
+    
 
 
 
@@ -484,6 +496,15 @@ nav a:hover.dark {
     color: #f5f5f7 !important;
     border-color: white;
 }
+
+
+
+
+
+
+
+
+
 
 
 
