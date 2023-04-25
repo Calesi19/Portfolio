@@ -499,7 +499,7 @@ nav a:hover.dark {
 
 
 
-
+/* Hamburger Menu */
 
 
 #menu__toggle {
@@ -578,6 +578,38 @@ nav a:hover.dark {
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+
+
+
+/*  */
+
+
+footer {
+  height: 200px;
+  margin-top: 40px;
+  background-color: #404040;
+}
+
+
+footer.dark {
+  background-color: rgb(20, 16, 21);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
