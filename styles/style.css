@@ -150,6 +150,11 @@ main {
 
   .hero-button.dark {
     background-color: #2aca3e;
+    color: #1d1d1f;
+  }
+
+  .hero-button.dark:hover {
+    background-color: #23a834;
   }
 
 
