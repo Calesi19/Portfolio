@@ -809,7 +809,7 @@ footer.dark {
 
 }
 
-#profile-box img {
+#resume-profile-img {
   width: 100%;
   border-radius: 10px;
 }
@@ -817,6 +817,24 @@ footer.dark {
 #profile-box strong {
   font-size: 23pt;
 }
+
+#profile-box button {
+  color: #1d1d1f;
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  align-items: center;
+  background-color: #cbdae6;
+}
+
+.button-icon {
+  margin-left: 30px;
+  width: 25px;
+  border-radius: 0;
+}
+
+
+
 
 
 
