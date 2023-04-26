@@ -925,6 +925,40 @@ footer.dark {
     height: 55px;
   }
 
+
+
+
+
+
+
+
+
+  /* RESUME PAGE */
+
+  #resume-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-box {
+    width: 78%;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  #profile-box strong {
+    font-size: x-large;
+  }
+
+  #resume-profile-img {
+    width: 60%;
+  }
+
+  #profile-box button {
+    padding: 25px;
+    width: 90%;
+  }
+
 }
 
 
