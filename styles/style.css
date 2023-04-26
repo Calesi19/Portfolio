@@ -943,7 +943,7 @@ footer.dark {
   #profile-box {
     width: 78%;
     align-items: center;
-    border-radius: 30px;
+
   }
 
   #profile-box strong {
@@ -955,9 +955,26 @@ footer.dark {
   }
 
   #profile-box button {
-    padding: 25px;
+    padding: 15px;
     width: 90%;
   }
+
+
+
+  #skills {
+    margin-top: 30px;
+  }
+
+  #resume-content {
+    width: 85%;
+  }
+
+  .document-button {
+    padding: 30px;
+    font-size: small;
+  }
+
+  
 
 }
 
