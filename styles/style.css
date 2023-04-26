@@ -628,48 +628,7 @@ footer.dark {
 
 
 
-@media(max-width:924px){
-  .hero {
-      flex-direction: column;
-      margin-top: 11%;
-  }
 
-  .hero-text {
-      max-width: 80%;
-      text-align: center;
-  }
-
-
-  .app-window {
-      width: 95%;
-  }
-
-  nav {
-    display: none;
-  }
-  
-  #title-shell {
-    position: fixed;
-    left: 100px;
-
-  }
-
-  #theme-toggle {
-    position: fixed;
-    right: 20px;
-  }
-
-
-  .menu__btn {
-    display: inline;
-  }
-
-  header {
-    display: flex;
-    height: 55px;
-  }
-
-}
 
 
 
@@ -901,5 +860,71 @@ footer.dark {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:924px){
+  .hero {
+      flex-direction: column;
+      margin-top: 11%;
+  }
+
+  .hero-text {
+      max-width: 80%;
+      text-align: center;
+  }
+
+
+  .app-window {
+      width: 95%;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  #title-shell {
+    position: fixed;
+    left: 100px;
+
+  }
+
+  #theme-toggle {
+    position: fixed;
+    right: 20px;
+  }
+
+
+  .menu__btn {
+    display: inline;
+  }
+
+  header {
+    display: flex;
+    height: 55px;
+  }
+
+}
 
 

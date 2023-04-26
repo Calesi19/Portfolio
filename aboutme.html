@@ -4,61 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/stack.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+
+
+    <title>Carlos Lespin</title>
 </head>
-<body>
+<body class="toggle-theme">
 
 
-    <header>
+    <header class="toggle-theme">
+
+
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn toggle-theme" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box toggle-theme">
+                <li><a class="menu__item toggle-theme" href="index.html">Home</a></li>
+                <li><a class="menu__item toggle-theme" href="aboutme.html">About Me</a></li>
+                <li><a class="menu__item toggle-theme" href="resume.html">Resume</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+            <div id="title-shell">
+                <strong id="typing-title" class="typing-title toggle-theme">Carlos Lespin</strong>
+            </div>
+
+        
+
+        <nav>
+            <a class="toggle-theme" href="index.html">HOME</a>
+            <a class="toggle-theme" href="aboutme.html">ABOUT ME</a>
+            <a class="toggle-theme" href="resume.html">RESUME</a>
+        </nav>
+
+
+        
+
+        <label class="toggle-switch" id="theme-toggle">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider"></span>
+        </label>
 
 
 
     </header>
 
-
     <main>
 
         
-        <div class="container">
-
-            <div class="card" style="--i:1">
-                <div class="content" style="--j:1">
-                    <h2>Card 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
-                </div>
-            </div>
-
-            <div class="card" style="--i:1">
-                <div class="content" style="--j:1">
-                    <h2>Card 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
-                </div>
-            </div>
-
-            <div class="card" style="--i:1">
-                <div class="content" style="--j:1">
-                    <h2>Card 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi temporibus, maiores maxime inventore nihil officia magnam voluptate fugit sit magni quidem qui officiis expedita. Minima aspernatur ipsum perferendis corporis?</p>
-                </div>
-            </div>
-
-        </div>
-
-          
-
 
         
 
+        
 
+        
+    
     </main>
 
-    <footer>
+    <footer class="toggle-theme">
 
     </footer>
 
-
     
+    <script src="scripts/typingTitle.js"></script>
+    <script src="scripts/themeToggle.js"></script>
+    <script src="scripts/github.js"></script>
+
+
+
+  
+
+
 </body>
-</html>
 </html>
