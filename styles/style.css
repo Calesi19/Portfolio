@@ -1002,3 +1002,8 @@ footer.dark {
 html {
   background-color: #404040;
 }
+
+#qr-code {
+  margin-top: 30px;
+  width: 100%;
+}
