@@ -764,3 +764,122 @@ footer.dark {
   display: none;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESUME PAGE */
+
+#profile-box {
+  background-color: #e2e6e9;
+  height: min-content;
+  width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+
+
+}
+
+#profile-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#profile-box strong {
+  font-size: 23pt;
+}
+
+
+
+
+
+#resume-main {
+  /*background-color: blue;*/
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+  align-items: start;
+}
+
+
+#resume-content {
+  height: 1000px;
+  /*background-color: #23a834;*/
+  width: 60%;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+#resume-content strong {
+  font-size: 30pt;
+}
+
+.document-button {
+  width: 49%;
+}
+
+
+
+
+
+
+.box {
+  background-color: #e2e6e9;
+  border-radius: 15px;
+  margin-top: 80px;
+  min-height: 100px;
+
+  padding: 20px;
+
+}
+
+.box strong {
+  
+  font-size: 18pt !important;
+}
+
+
+
+
+
+
+
+
+
