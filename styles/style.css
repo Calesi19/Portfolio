@@ -1012,3 +1012,47 @@ html {
   margin-top: 30px;
   width: 100%;
 }
+
+
+
+
+#skill-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.skill-column {
+  width: 50%;
+}
+
+.skill {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px;
+}
+
+.skill-title strong {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.skill-languages {
+  
+  height: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.skill-languages img {
+  height: 100%;
+}
+
+
+
+
+
+
+
