@@ -43,9 +43,9 @@
 
         <nav>
             <a class="toggle-theme" href="index.html">PROJECTS</a>
-            <a class="toggle-theme selected" href="aboutme.html">ABOUT ME</a>
+            <a class="toggle-theme" href="aboutme.html">ABOUT ME</a>
             <a class="toggle-theme" href="resume.html">RÉSUMÉ</a>
-            <a class="toggle-theme" href="contact.html">CONTACT</a>
+            <a class="toggle-theme selected" href="contact.html">CONTACT</a>
         </nav>
 
 
@@ -64,7 +64,27 @@
 
         
 
-        
+        <h1>Contact Us</h1>
+        <form action="send_email.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" cols="40" required></textarea>
+            
+            <input type="submit" value="Send">
+        </form>
+
+
+
+
+
+
+
+
 
         
 
