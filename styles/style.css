@@ -858,6 +858,25 @@ footer.dark {
 
 
 
+.job {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px;
+}
+.job-place {
+  font-weight: bold;
+  font-size: larger;
+}
+.job-time {
+  font-weight: lighter;
+  font-size: small;
+}
+
+
+
+
 
 
 
