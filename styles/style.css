@@ -858,12 +858,14 @@ footer.dark {
 
 
 
-
+#skills {
+  margin-top: 80px;
+}
 
 .box {
   background-color: #e2e6e9;
   border-radius: 15px;
-  margin-top: 80px;
+  
   min-height: 100px;
 
   padding: 20px;
