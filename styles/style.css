@@ -1115,7 +1115,7 @@ html {
 
 
 #link-code {
-  background-color: #79aaca;
+  background-color: #6ba1c4;
   border-radius: 15px;
 }
 
@@ -1127,12 +1127,30 @@ html {
 }
 
 #information-bottom-section {
-  background-color: skyblue;
+  background-color: #6ba1c4;
   height: 200px;
   margin: 30px -20px -20px -20px;
   border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+#information-bottom-section section {
+  padding: 20px;
+}
 
+#contact-methods {
+  display: flex;
+}
+
+.contact-method {
+  margin: 10px;
+  padding: 7px 40px;
+  background-color: #a9c4d6;
+  border-radius: 30px;
+  height: min-content;
+}
 
 
