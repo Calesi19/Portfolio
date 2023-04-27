@@ -1139,6 +1139,8 @@ html {
 
 #information-bottom-section section {
   padding: 20px;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 #contact-methods {
