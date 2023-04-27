@@ -60,23 +60,59 @@
 
     </header>
 
-    <main>
+    <main class="contact-main">
+
+
+        <div id="contact-information" class="box">
+
+            <div id="information-top-section">
+
+                <div id="information">
+
+                    <strong>Need to find me? <br><br>Scan the code to get<br>all my links on <br>your phone.</strong>
+
+                    
+                    
+                </div>
+    
+                <div id="link-code">
+                    <img src="images/linktree.svg" alt="Linktree QR Code">
+                </div>
+
+            </div>
+            
+            <div id="information-bottom-section">
+                
+                    <div class="contact-method">carlos.lespin.silva@gmail.com</div>
+                    <div class="contact-method">787-988-9447</div>
+            </div>
+
+
+        </div>
+
+
+
+
+
 
         
+        <div id="send-message">
 
-        <h1>Contact Us</h1>
-        <form action="send_email.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
+            <h1>Send me a message.</h1>
+        <form class="box" action="send_email.php" method="post">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="sender-name" required>
             
-            <label for="email">Email:</label>
+            <label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
             
             <label for="message">Message:</label>
             <textarea name="message" id="message" rows="5" cols="40" required></textarea>
             
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" class="send-button">
         </form>
+        </div>
+        
 
 
 

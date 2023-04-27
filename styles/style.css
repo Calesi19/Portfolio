@@ -1056,3 +1056,83 @@ html {
 
 
 
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 25px;
+}
+
+.contact-main input, .contact-main textarea {
+  padding: 15px;
+  border-radius: 13px;
+  border-style: none;
+}
+
+.contact-main label {
+  padding: 10px;
+}
+
+.contact-main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main textarea {
+  min-height: 150px;
+}
+
+.send-button {
+  margin-top: 20px;
+  background-color: #6ba1c4;
+}
+
+#contact-information {
+  height: 100%;
+}
+
+#contact-information img {
+  width: 175px;
+  padding: 20px;
+}
+
+
+#information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+
+  justify-content: center;
+  text-align: right;
+  
+}
+
+#information strong {
+  font-size: 40pt;
+}
+
+
+#link-code {
+  background-color: #79aaca;
+  border-radius: 15px;
+}
+
+
+
+#information-top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#information-bottom-section {
+  background-color: skyblue;
+  height: 200px;
+  margin: 30px -20px -20px -20px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
