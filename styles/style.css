@@ -970,9 +970,9 @@ html {
 .contact-main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: start;
   gap: 30px;
-  padding-top: 25px;
+  padding-top: 10%;
 }
 
 .contact-main input, .contact-main textarea {
@@ -1066,6 +1066,39 @@ html {
   height: min-content;
 }
 
+#thank-you-message {
+  text-align: center;
+}
+
+#thank-you-message div {
+  padding: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1078,14 +1111,6 @@ html {
   flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
 #projects {
   width: 100%;
   display: flex;
@@ -1093,21 +1118,40 @@ html {
   padding-left: 30%;
   margin-top: 90px;
   margin-bottom: 0;
-  background-color: #23a834;
+  margin-bottom: -80px;
 }
 
 #project-grid {
   width: 100%;
-
   display: grid;
   grid-template-columns: 30% 30% 30%;
   justify-content: center;
-  
+}
+
+@media(min-width:1444px){
+  #project-grid {
+    grid-template-columns: 420px 420px 420px;
+  }
+}
+
+@media(max-width:1050px){
+  #project-grid {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media(max-width:700px){
+  #project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .project-box {
   border-radius: 20px;
   background-color: #e2e6e9;
+  width: 100%;
   max-width: 400px;
   height: 400px;
 
@@ -1314,13 +1358,18 @@ html {
 
 
   #send-message {
-    margin-top: 80px;
+    margin-top: 30px;
     width: 100%;
     border-radius: 0px;
   }
 
+  #send-message form {
+    border-radius: 0;;
+  }
+
   #send-message h1 {
     text-align: center;
+    margin: 30px;
   }
 
   .desktop-view {
