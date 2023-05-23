@@ -6,53 +6,141 @@
     <link rel="stylesheet" href="styles.css">
     <title>Glowing Dots Background</title>
     <style>
-        body {
-  background-color: #ffffff; /* Set white background color */
-  background-image: radial-gradient(#ffffff 0%, #ffffff 30%, #f0f0f0 60%, #d0d0d0 100%), 
-                    radial-gradient(#ffffff 0%, #ffffff 20%, #f0f0f0 50%, #d0d0d0 100%), 
-                    radial-gradient(#ffffff 0%, #ffffff 10%, #f0f0f0 40%, #d0d0d0 100%);
-  background-size: 100px 100px; /* Set the size of the dots */
-  background-position: 0 0, 50px 50px, 25px 25px; /* Set the position of the dots */
+        .rounded-box {
+  width: 600px;
+  height: 500px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-@keyframes glowing {
-  0% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.4;
-  }
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 
-body {
-  /* Same as before */
+.description {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
+.bottom-bar {
+  position: absolute;
   bottom: 0;
-  opacity: 0.4;
-  animation: glowing 10s ease-in-out infinite;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #f00; /* Choose your own color here */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.rounded-box {
+  border: 2px solid #000;
+  border-radius: 15px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.description {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #f00; /* Choose your own color here */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: duppercase;
+}
+
     </style>
 </head>
 <body>
-    <canvas id="glowingDots"></canvas>
-    <div class="content">
-        <!-- Add your website content here -->
-    </div>
-    <script>
+    
+    <main>
+      <div class="grid-container">
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+        <!-- Repeat the above block 9 more times -->
 
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
 
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
 
-    </script>
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+
+        <div class="rounded-box">
+          <h2 class="title">Title Goes Here</h2>
+          <p class="description">Description goes here. It can be as long as you want it to be.</p>
+          <div class="bottom-bar">View More</div>
+        </div>
+      </div>
+
+      
+      
+    </main>
 </body>
 </html>

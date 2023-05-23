@@ -5,6 +5,13 @@
 }
 
 
+.phone-view {
+  display: none;
+}
+
+
+
+
 html, body {
     width: 100%;
     max-width: 100vw;
@@ -904,103 +911,7 @@ footer.dark {
 
 
 
-@media(max-width:924px){
-  .hero {
-      flex-direction: column;
-      margin-top: 11%;
-  }
 
-  .hero-text {
-      max-width: 80%;
-      text-align: center;
-  }
-
-
-  .app-window {
-      width: 95%;
-  }
-
-  nav {
-    display: none;
-  }
-  
-  #title-shell {
-    position: fixed;
-    left: 100px;
-
-  }
-
-  #theme-toggle {
-    position: fixed;
-    right: 20px;
-  }
-
-
-  .menu__btn {
-    display: inline;
-  }
-
-  header {
-    display: flex;
-    height: 55px;
-  }
-
-
-
-
-
-
-
-
-
-  /* RESUME PAGE */
-
-  #resume-main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #profile-box {
-    width: 78%;
-    align-items: center;
-
-  }
-
-  #profile-box strong {
-    font-size: x-large;
-  }
-
-  #resume-profile-img {
-    width: 50%;
-  }
-
-  #profile-box button {
-    padding: 15px;
-    width: 90%;
-  }
-
-
-
-  #skills {
-    margin-top: 30px;
-  }
-
-  #resume-content {
-    width: 85%;
-  }
-
-  .document-button {
-    padding: 30px;
-    font-size: small;
-  }
-
-  #qr-code {
-    display: none;
-  }
-
-  
-
-}
 
 
 
@@ -1154,5 +1065,288 @@ html {
   border-radius: 30px;
   height: min-content;
 }
+
+
+
+
+
+
+
+
+#projects-main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+#projects {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  padding-left: 30%;
+  margin-top: 90px;
+  margin-bottom: 0;
+  background-color: #23a834;
+}
+
+#project-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  
+}
+
+.project-box {
+  border-radius: 20px;
+  background-color: #e2e6e9;
+  max-width: 400px;
+  height: 400px;
+
+  padding: 30px;
+  margin: 7px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.project-title {
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.project-box:hover {
+  background-color: black;
+  color: white;
+}
+
+.project-box:hover .project-title {
+  color: white;
+}
+
+.project-box:hover .project-description {
+  color: white;
+}
+
+.project-box:hover .button-wrapper {
+  background-color: #2aca3e;
+  color: white;
+}
+
+.project-title, .project-description {
+  color: black;
+}
+
+.tags {
+  position: relative;
+  overflow:hidden;
+  width: 100%;
+  margin-top: 15px;
+  line-height: 40px;
+}
+
+.tag {
+
+  font-size: small;
+  padding: 10px;
+  margin: 3px;
+  background-color: yellow;
+  width: min-content;
+  border-radius: 8px;
+  
+}
+
+.button-wrapper {
+  background-color: #a9c4d6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  
+  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+  height: 50px;
+}
+
+.project-button {
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgba(0,0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:924px){
+  .hero {
+      flex-direction: column;
+      margin-top: 11%;
+  }
+
+  .hero-text {
+      max-width: 80%;
+      text-align: center;
+  }
+
+
+  .app-window {
+      width: 95%;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  #title-shell {
+    position: fixed;
+    left: 100px;
+
+  }
+
+  #theme-toggle {
+    position: fixed;
+    right: 20px;
+  }
+
+
+  .menu__btn {
+    display: inline;
+  }
+
+  header {
+    display: flex;
+    height: 55px;
+  }
+
+
+
+
+
+
+
+
+
+  /* RESUME PAGE */
+
+  #resume-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-box {
+    width: 78%;
+    align-items: center;
+
+  }
+
+  #profile-box strong {
+    font-size: x-large;
+  }
+
+  #resume-profile-img {
+    width: 50%;
+  }
+
+  #profile-box button {
+    padding: 15px;
+    width: 90%;
+  }
+
+
+
+  #skills {
+    margin-top: 30px;
+  }
+
+  #resume-content {
+    width: 85%;
+  }
+
+  .document-button {
+    padding: 30px;
+    font-size: small;
+  }
+
+  #qr-code {
+    display: none;
+  }
+
+  
+
+
+
+
+
+  /*CONTACT PAGE*/
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  #send-message {
+    margin-top: 80px;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #send-message h1 {
+    text-align: center;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .phone-view {
+    display:block ;
+  }
+
+  #contact-information {
+    position: relative;
+    
+    max-width: 100%;
+    background-color: #f5f5f7;
+  }
+
+  #information-bottom-section {
+    align-items: center;
+    border-radius: 0;
+  }
+
+
+}
+
+
+
 
 
