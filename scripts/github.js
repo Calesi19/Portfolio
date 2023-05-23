@@ -24,12 +24,13 @@ async function fetchData() {
         projectDescription.className = 'project-description';
         tags.className = 'tags';
         buttonWrapper.className = 'button-wrapper';
+        
         button.className = 'project-button';
 
         // Add inner text
         projectTitle.innerText = data[i].name;
         projectDescription.innerText = data[i].description;
-        button.innerText = 'View Repo';
+        button.innerText = 'Visit Website';
 
         // Create tags
         try {

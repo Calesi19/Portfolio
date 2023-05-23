@@ -1112,10 +1112,8 @@ html {
 }
 
 #projects {
-  width: 100%;
   display: flex;
   padding: 20px;
-  padding-left: 30%;
   margin-top: 90px;
   margin-bottom: 0;
   margin-bottom: -80px;
@@ -1151,7 +1149,7 @@ html {
 .project-box {
   border-radius: 20px;
   background-color: #e2e6e9;
-  width: 100%;
+  width: 97%;
   max-width: 400px;
   height: 400px;
 
@@ -1159,6 +1157,7 @@ html {
   margin: 7px;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 
 .project-title {
