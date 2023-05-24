@@ -1520,3 +1520,36 @@ html {
 
 
 
+
+
+
+
+
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e2e6e9;
+  gap: 140px;
+  padding: 30px;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+section img {
+  width: 200px;
+}
+
+
