@@ -1117,7 +1117,39 @@ html {
   margin-top: 90px;
   margin-bottom: 0;
   margin-bottom: -80px;
+  align-items:center;
+  justify-content: center;
+  gap: 20%;
 }
+
+#projects button {
+  display: flex;
+  min-width: fit-content;
+  width: max-content;
+  align-items: center;
+  gap: 15px;
+  padding: 4px;
+  padding-left: 30px;
+  padding-right: 4px;
+  border-radius: 10000px;
+  transition: .4s ease-in-out;
+  background-color: #1d1d1f;
+  color: #f5f5f7 !important;
+}
+
+.circular-image {
+  border-radius: 50%;
+}
+
+#project-title {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
 
 #project-grid {
   width: 100%;
@@ -1205,7 +1237,6 @@ html {
   background-color: yellow;
   width: min-content;
   border-radius: 8px;
-  
 }
 
 .button-wrapper {
@@ -1221,13 +1252,17 @@ html {
   border-bottom-right-radius: 20px;
   
   height: 50px;
+
+  text-align: center;
+  justify-content: center;
 }
 
 .project-button {
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   border-style: none;
   background-color: rgba(0,0,0,0);
+  font-weight: bold;
 }
 
 
@@ -1430,6 +1465,38 @@ html {
   #information-bottom-section {
     align-items: center;
     border-radius: 0;
+  }
+
+  #contact-methods {
+    flex-direction: column;
+  }
+
+
+  .contact-method {
+    margin: 0;
+    margin-bottom: 4px;
+    width: max-content;
+    
+  }
+
+  #information-bottom-section {
+    background-color: #6ba1c4;
+    min-height: 200px;
+    margin: 30px 0px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .send-button {
+    margin-top: 20px;
+    background-color: #6ba1c4;
+  }
+  
+  .send-button {
+    height: 50px;
   }
 
 
