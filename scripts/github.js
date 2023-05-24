@@ -72,6 +72,12 @@ async function fetchData() {
           window.location.href = data[i].html_url;
         });
 
+        buttonWrapper.addEventListener("click", function(event) {
+          event.stopPropagation(); // Stop event propagation
+          // Redirect to inner div website
+          window.location.href = data[i].homepage;
+        });
+
         // Add class names
         projectBox.className = 'project-box';
         projectTitle.className = 'project-title';
@@ -83,11 +89,6 @@ async function fetchData() {
 
 
 
-        function toTitleCase(str) {
-          return str.replace(/\w\S*/g, function(word) {
-            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-          });
-        }
 
 
         
@@ -195,14 +196,8 @@ async function fetchData() {
         projectBox.appendChild(tags);
 
         if (data[i].homepage != null & data[i].homepage != "") {
-          // Add a click event listener to the button
-          buttonWrapper.addEventListener("click", function() {
-          // Set the URL you want to navigate to
-          var url = data[i].homepage;
-
-          // Navigate to the URL
-          window.location.href = url;
-          });
+          
+          
 
           projectBox.appendChild(buttonWrapper);
         }
