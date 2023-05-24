@@ -1530,7 +1530,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width:min-content;
   background-color: #e2e6e9;
   gap: 140px;
   padding: 30px;
@@ -1551,5 +1551,57 @@ html {
 section img {
   width: 200px;
 }
+
+
+
+#faq {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for question bars */
+.question {
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #e2e6e9;
+  transition: .4s ease-in-out;
+}
+
+.question:hover {
+  background-color: #c0c3c7;;
+}
+
+/* Style for answer section */
+.answer {
+  display: none;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative;
+  flex-direction: column;
+  padding: 100px;
+  gap: 50px;
+}
+
+.answer strong {
+  font-size: 30px;
+}
+
+.answer img {
+  width: 250px;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+
 
 

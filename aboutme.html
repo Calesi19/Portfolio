@@ -146,16 +146,47 @@
           </div>
 
 
-          <div>
+          <div id="faq">
 
-            <div><strong>F.A.Q.</strong>
+            <h2>FAQ</h2>
+            <button class="question">What makes you a unique candidate?</button>
+
+<div class="answer">
+
+    
+
+            <div class="answer-text">
+                <div class="section-title"><strong>Background</strong></div>
+                <div class="section-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi consequuntur quae sed temporibus ad. Ea dolor ipsum nemo error, reiciendis modi repellendus, earum voluptate eius quia nesciunt amet consequuntur maiores?
                 </div>
+            </div>
+
+            <img src="images/byui.png" alt="Brigham Young University - Idaho Logo">
+        
+
+        
 
 
+</div>
 
-
+<button class="question">Where are you from?</button>
+<div class="answer">
+  <p>Answer for question 2...</p>
+</div>
 
           </div>
+
+                
+
+
+
+
+
+
+
+
+          
         
                 
             
@@ -180,6 +211,23 @@
     <script src="scripts/typingTitle.js"></script>
     <script src="scripts/themeToggle.js"></script>
     <script src="scripts/github.js"></script>
+
+    <script>
+        var questions = document.getElementsByClassName("question");
+        var i;
+    
+        for (i = 0; i < questions.length; i++) {
+            questions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var answer = this.nextElementSibling;
+                if (answer.style.display === "flex") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "flex";
+                }
+            });
+        }
+    </script>
 
 
 
