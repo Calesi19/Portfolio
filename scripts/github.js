@@ -38,7 +38,9 @@ function properCapitalization(language) {
       "machine learning" : "Machine Learning",
       "game" : "Game",
       "dynamodb" : "DynamoDB",
-      "dart": "Dart"
+      "dart": "Dart",
+      "beautifulsoup" : "BeautifulSoup",
+      "web-scraping" : "Web Scraping"
   };
 
   return languageMap[language.toLowerCase()] || language.toUpperCase();

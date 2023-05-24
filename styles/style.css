@@ -1335,7 +1335,8 @@ html {
   }
 
   #resume-profile-img {
-    width: 50%;
+    max-width: 300px;
+    object-fit: cover;
   }
 
   #profile-box button {
