@@ -1169,6 +1169,7 @@ html {
 .project-box:hover {
   background-color: black;
   color: white;
+  transition: .4s ease-in-out;
 }
 
 .project-box:hover .project-title {
@@ -1190,7 +1191,7 @@ html {
 
 .tags {
   position: relative;
-  overflow:hidden;
+  overflow: scroll;
   width: 100%;
   margin-top: 15px;
   line-height: 40px;
@@ -1248,6 +1249,26 @@ html {
 
 
 @media(max-width:924px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .hero {
       flex-direction: column;
       margin-top: 11%;
@@ -1323,13 +1344,23 @@ html {
   }
 
 
+  #resume-intro {
+    text-align: center;
+  }
+
+  #resume-briefing {
+    text-align: center;
+  }
+
+
+
 
   #skills {
     margin-top: 30px;
   }
 
   #resume-content {
-    width: 85%;
+    width: 95%;
   }
 
   .document-button {
@@ -1339,6 +1370,15 @@ html {
 
   #qr-code {
     display: none;
+  }
+
+  #skill-columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-column {
+    width: 100%;
   }
 
   
@@ -1376,7 +1416,7 @@ html {
   }
 
   .phone-view {
-    display:block ;
+    display:inline ;
   }
 
   #contact-information {
