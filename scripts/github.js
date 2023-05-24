@@ -67,6 +67,11 @@ async function fetchData() {
         let buttonWrapper = document.createElement('div');
         let button = document.createElement('button');
 
+        projectBox.addEventListener("click", function() {
+          // Redirect to a different website
+          window.location.href = data[i].html_url;
+        });
+
         // Add class names
         projectBox.className = 'project-box';
         projectTitle.className = 'project-title';

@@ -1252,6 +1252,7 @@ html {
   left: 0;
   width: 100%;
   max-width: 400px;
+  z-index: 900;
   
   
   border-bottom-left-radius: 20px;
@@ -1269,6 +1270,7 @@ html {
   border-style: none;
   background-color: rgba(0,0,0,0);
   font-weight: bold;
+  z-index: 901;
 }
 
 
