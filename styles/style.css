@@ -1605,3 +1605,15 @@ section img {
 
 
 
+
+
+
+.personality {
+  padding: 0;
+  margin: 0;
+  transition: .4 ease-in-out;
+}
+
+.personality:hover {
+  color: #23a834;
+}
