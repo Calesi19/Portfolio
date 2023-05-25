@@ -196,9 +196,6 @@ async function fetchData() {
         projectBox.appendChild(tags);
 
         if (data[i].homepage != null & data[i].homepage != "") {
-          
-          
-
           projectBox.appendChild(buttonWrapper);
         }
         
