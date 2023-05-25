@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 
+    
+
 
     <title>Carlos Lespin</title>
 </head>
@@ -42,11 +44,10 @@
         
 
         <nav>
-            <a class="toggle-theme" href="projects.html">PROJECTS</a>
+            <a class="toggle-theme selected" href="projects.html">PROJECTS</a>
             <a class="toggle-theme" href="index.html">ABOUT ME</a>
             <a class="toggle-theme" href="resume.html">RÉSUMÉ</a>
-            <a class="toggle-theme selected" href="contact.html">CONTACT</a>
-
+            <a class="toggle-theme" href="contact.html">CONTACT</a>
         </nav>
 
 
@@ -61,17 +62,24 @@
 
     </header>
 
-    <main>
+    <main id="projects-main">
 
         
-        <div id="thank-you-message">
-            <div><strong>Thank You! 😄</strong></div>
-        
 
-        <p><br>Your message has been sent.<br>I'll get back to you as soon as I can. </p>
-        
+        <div id="projects">
+            <div id="project-title"><img src="images/github.png" width="40px" height="40px" alt="GitHub Logo"><h1> Projects</h1></div>
+            
+            <a href="https://github.com/Calesi19">
+            <button>GitHub Profile <img src="images/profile.jpg" width="50px" alt="GitHub Profile Picture" class="circular-image"></button>
+        </a>
         </div>
-        
+
+        <div id="project-grid">
+
+            
+
+
+        </div>
         
 
         
@@ -85,6 +93,7 @@
     
     <script src="scripts/typingTitle.js"></script>
     <script src="scripts/themeToggle.js"></script>
+    <script src="scripts/github.js"></script>
 
 
 
