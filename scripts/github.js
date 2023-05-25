@@ -9,10 +9,10 @@ const languageMap = {
   "mongodb": ["MongoDB", "green"],
   "flutter": ["Flutter", "blue"],
   "react": ["React", "purple"],
-  "java": ["Java", "skyBlue"],
+  "java": ["Java", "green"],
   "python": ["Python", "red"],
-  "c++": ["C++", "green"],
-  "cpp": ["C++", "green"],
+  "c++": ["C++", "blue"],
+  "cpp": ["C++", "blue"],
   "c#": ["C#", "blue"],
   "angular": ["Angular", "red"],
   "vue": ["Vue.js", "green"],
@@ -36,10 +36,10 @@ const languageMap = {
   "restful-api" : ["RESTful API", "red"],
   "ai" : ["A.I.", "purple"],
   "machine learning" : ["Machine Learning", "purple"],
-  "game" : ["Game", "yellow"],
+  "game" : ["Game", "purple"],
   "dynamodb" : ["DynamoDB", "green"],
   "dart": ["Dart", "blue"],
-  "beautifulsoup" : ["BeautifulSoup", "pink"],
+  "beautifulsoup" : ["BeautifulSoup", "green"],
   "web-scraping" : ["Web Scraping", "pink"]
 };
 
