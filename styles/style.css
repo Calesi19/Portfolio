@@ -1617,3 +1617,32 @@ section img {
 .personality:hover {
   color: #23a834;
 }
+
+
+
+
+
+
+@media(max-width:924px){
+
+  .answer-text .section-description {
+    padding: 30px;
+  }
+
+  .about-me-section {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+    gap: 30px;
+  }
+
+  .section-text {
+    width: fit-content;
+  }
+
+
+
+
+
+}
