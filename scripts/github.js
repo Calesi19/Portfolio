@@ -1,64 +1,93 @@
 
-function properCapitalization(language) {
-  const languageMap = {
-      "javascript": "JavaScript",
-      "firebase": "FireBase",
-      "firestore": "FireStore",
-      "sql": "SQL",
-      "nosql": "NoSQL",
-      "mongodb": "MongoDB",
-      "flutter": "Flutter",
-      "react": "React",
-      "java": "Java",
-      "python": "Python",
-      "c++": "C++",
-      "cpp": "C++",
-      "c#": "C#",
-      "angular": "Angular",
-      "vue": "Vue.js",
-      "typescript": "TypeScript",
-      "ruby": "Ruby",
-      "ruby on rails": "Ruby on Rails",
-      "swift": "Swift",
-      "kotlin": "Kotlin",
-      "php": "PHP",
-      "dotnet": ".NET",
-      ".net": ".NET",
-      "html": "HTML",
-      "css": "CSS",
-      "shell": "Shell",
-      "markdown": "Markdown",
-      "vim" : "Vim",
-      "database" : "Database",
-      "website" : "Website",
-      "api" : "API",
-      "restful api" : "RESTful API",
-      "restful-api" : "RESTful API",
-      "ai" : "A.I.",
-      "machine learning" : "Machine Learning",
-      "game" : "Game",
-      "dynamodb" : "DynamoDB",
-      "dart": "Dart",
-      "beautifulsoup" : "BeautifulSoup",
-      "web-scraping" : "Web Scraping"
-  };
+// Map of language capitalizations and colors
+const languageMap = {
+  "javascript": ["JavaScript", "yellow"],
+  "firebase": ["FireBase", "orange"],
+  "firestore": ["FireStore", "orange"],
+  "sql": ["SQL", "green"],
+  "nosql": ["NoSQL", "green"],
+  "mongodb": ["MongoDB", "green"],
+  "flutter": ["Flutter", "blue"],
+  "react": ["React", "purple"],
+  "java": ["Java", "skyBlue"],
+  "python": ["Python", "red"],
+  "c++": ["C++", "green"],
+  "cpp": ["C++", "green"],
+  "c#": ["C#", "blue"],
+  "angular": ["Angular", "red"],
+  "vue": ["Vue.js", "green"],
+  "typescript": ["TypeScript", "turquoise"],
+  "ruby": ["Ruby", "salmon"],
+  "ruby on rails": ["Ruby on Rails", "salmon"],
+  "swift": ["Swift", "yellowOrange"],
+  "kotlin": ["Kotlin", "rose"],
+  "php": ["PHP", "coral"],
+  "dotnet": [".NET", "lavender"],
+  ".net": [".NET", "lavender"],
+  "html": ["HTML", "pink"],
+  "css": ["CSS", "lavender"],
+  "shell": ["Shell", "green"],
+  "markdown": ["Markdown", "yellow"],
+  "vim" : ["Vim", "green"],
+  "database" : ["Database", "apricot"],
+  "website" : ["Website", "blue"],
+  "api" : ["API", "red"],
+  "restful api" : ["RESTful API", "red"],
+  "restful-api" : ["RESTful API", "red"],
+  "ai" : ["A.I.", "purple"],
+  "machine learning" : ["Machine Learning", "purple"],
+  "game" : ["Game", "yellow"],
+  "dynamodb" : ["DynamoDB", "green"],
+  "dart": ["Dart", "blue"],
+  "beautifulsoup" : ["BeautifulSoup", "pink"],
+  "web-scraping" : ["Web Scraping", "pink"]
+};
 
-  return languageMap[language.toLowerCase()] || language.toUpperCase();
+// Map of color names to color codes
+const colorMap = {
+  "yellow": "#fdd692",
+  "orange": "#ff9980",
+  "green": "#a1e1d4",
+  "blue": "#7fc8f8",
+  "purple": "#c7ceea",
+  "skyBlue": "#a2cffe",
+  "red": "#ffafcc",
+  "turquoise": "#b8e9e5",
+  "salmon": "#ff9b9b",
+  "yellowOrange": "#ffd06e",
+  "rose": "#ffc0cb",
+  "coral": "#ffb2a7",
+  "lavender": "#c7ceea",
+  "pink": "#ffafcc",
+  "apricot": "#f9cb9c"
+};
+
+// Proper capitalization function
+function properCapitalization(language) {
+  const langData = languageMap[language.toLowerCase()];
+  return langData ? langData[0] : language.toUpperCase();
+}
+
+
+// Get color for language
+function getColorForLanguage(language) {
+  const langData = languageMap[language.toLowerCase()];
+  return langData ? colorMap[langData[1]] : "#ffffff";
 }
 
 
 
-
+// Your fetchData function...
 async function fetchData() {
   try {
+      // Fetching data and other logic...
       const response = await fetch(`https://api.github.com/users/Calesi19/repos`);
       const data = await response.json();
 
       console.log(data);
 
-      for (let i = 0; i < data.length; i++) {
-        console.log(data[i].name)
 
+      for (let i = 0; i < data.length; i++) {
         // Create divs
         let projectBox = document.createElement('div');
         let projectTitle = document.createElement('div');
@@ -66,6 +95,7 @@ async function fetchData() {
         let tags = document.createElement('div');
         let buttonWrapper = document.createElement('div');
         let button = document.createElement('button');
+
 
         projectBox.addEventListener("click", function() {
           // Redirect to a different website
@@ -78,20 +108,19 @@ async function fetchData() {
           window.location.href = data[i].homepage;
         });
 
-        // Add class names
-        projectBox.className = 'project-box';
-        projectTitle.className = 'project-title';
-        projectDescription.className = 'project-description';
-        tags.className = 'tags';
-        buttonWrapper.className = 'button-wrapper';
-        button.className = 'project-button';
+
+
+         // Add class names
+         projectBox.className = 'project-box';
+         projectTitle.className = 'project-title';
+         projectDescription.className = 'project-description';
+         tags.className = 'tags';
+         buttonWrapper.className = 'button-wrapper';
+         button.className = 'project-button';
+      
         
 
 
-
-
-
-        
 
         data[i].topics.forEach(function(item) {
           console.log(item);
@@ -101,87 +130,12 @@ async function fetchData() {
           tag.innerText = properCapitalization(item);
           tags.appendChild(tag);
 
-          let backgroundColor;
-
-          switch (properCapitalization(item).toUpperCase()) {
-            case 'JAVASCRIPT':
-              backgroundColor = "#fdd692"; // Pastel yellow
-              break;
-            case 'PYTHON':
-              backgroundColor = "#ff9980"; // Pastel red
-              break;
-            case 'HTML':
-              backgroundColor = "#ffafcc"; // Pastel pink
-              break;
-            case 'C':
-              backgroundColor = "#7fc8f8"; // Pastel blue
-              break;
-            case 'C++':
-              backgroundColor = "#a1e1d4"; // Pastel green
-              break;
-            case 'JAVA':
-              backgroundColor = "#a2cffe"; // Pastel sky blue
-              break;
-            case 'RUBY':
-              backgroundColor = "#ff9b9b"; // Pastel salmon
-              break;
-            case 'CSS':
-              backgroundColor = "#c7ceea"; // Pastel lavender
-              break;
-            case 'PHP':
-              backgroundColor = "#ffb2a7"; // Pastel coral
-              break;
-            case 'SWIFT':
-              backgroundColor = "#ffd06e"; // Pastel yellow-orange
-              break;
-            case 'GO':
-              backgroundColor = "#b5ffd9"; // Pastel mint
-              break;
-            case 'RUST':
-              backgroundColor = "#c9c9c9"; // Pastel gray
-              break;
-            case 'TYPESCRIPT':
-              backgroundColor = "#b8e9e5"; // Pastel turquoise
-              break;
-            case 'KOTLIN':
-              backgroundColor = "#ffc0cb"; // Pastel rose
-              break;
-            case 'SCALA':
-              backgroundColor = "#f6b4ee"; // Pastel orchid
-              break;
-            case 'PERL':
-              backgroundColor = "#f9cb9c"; // Pastel apricot
-              break;
-            case 'HASKELL':
-              backgroundColor = "#c5ddeb"; // Pastel powder blue
-              break;
-            case 'LUA':
-              backgroundColor = "#ffc1a1"; // Pastel peach
-              break;
-            case 'R':
-              backgroundColor = "#e8b1b1"; // Pastel light pink
-              break;
-            case 'MATLAB':
-              backgroundColor = "#ffe5b4"; // Pastel beige
-              break;
-            default:
-              backgroundColor = "#ffffff"; // White (default)
-          }
-
+          // Get the background color from the map
+          const backgroundColor = getColorForLanguage(item);
 
           tag.style.backgroundColor = backgroundColor;
-
-
-
         });
-
         
-
-
-
-
-
-
         // Add inner text
         projectTitle.innerText = data[i].name;
         projectDescription.innerText = data[i].description;
@@ -204,7 +158,8 @@ async function fetchData() {
         document.querySelector('#project-grid').appendChild(projectBox);
       }
 
-      
+
+
   } catch (error) {
       console.error('Error:', error);
   }
@@ -214,9 +169,3 @@ fetchData();
 
 
 
-
-
-
-
-
-  

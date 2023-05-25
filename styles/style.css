@@ -1231,7 +1231,7 @@ html {
 
 .tags {
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
   width: 100%;
   margin-top: 15px;
   line-height: 40px;
@@ -1602,10 +1602,6 @@ section img {
   width: 400px;
   gap: 20px;
 }
-
-
-
-
 
 
 .personality {
