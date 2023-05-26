@@ -264,12 +264,13 @@ body.dark #profile-box {
 }
 
 
-
-ul strong {
-  color: green;
-  font-size: 2pt !important;
+ul li{
+  margin: 10px 0px;
 }
 
+ul span {
+  font-weight: bolder;
+}
 
 
 
