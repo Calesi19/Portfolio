@@ -1,4 +1,7 @@
 
+// Keys in this file are okay to be in public. :)
+
+
 (function () {
     emailjs.init("kcf52lohD5fRPS9Oo");
 })();
