@@ -90,8 +90,8 @@ async function fetchData() {
       for (let i = 0; i < data.length; i++) {
         // Create divs
         let projectBox = document.createElement('div');
-        let projectTitle = document.createElement('div');
-        let projectDescription = document.createElement('div');
+        let projectTitle = document.createElement('h3');
+        let projectDescription = document.createElement('p');
         let tags = document.createElement('div');
         let buttonWrapper = document.createElement('div');
         let button = document.createElement('button');
@@ -117,9 +117,8 @@ async function fetchData() {
          tags.className = 'tags';
          buttonWrapper.className = 'button-wrapper';
          button.className = 'project-button';
-      
-        
 
+        
 
 
         data[i].topics.forEach(function(item) {

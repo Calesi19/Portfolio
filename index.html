@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/aboutme.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
 
 
@@ -13,7 +14,7 @@
 <body class="toggle-theme">
 
 
-    <header class="toggle-theme">
+    <header>
 
 
 
@@ -42,10 +43,10 @@
         
 
         <nav>
-            <a class="toggle-theme" href="projects.html">PROJECTS</a>
-            <a class="toggle-theme selected" href="index.html">ABOUT ME</a>
-            <a class="toggle-theme" href="resume.html">RÉSUMÉ</a>
-            <a class="toggle-theme" href="contact.html">CONTACT</a>
+            <a href="projects.html">PROJECTS</a>
+            <a class="selected" href="index.html">ABOUT ME</a>
+            <a href="resume.html">RÉSUMÉ</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
 
 
@@ -67,10 +68,14 @@
 
             <img class="hero-image" src="images/smilingme.jpeg" alt="Profile of Carlos Lespin">
 
-            <div class="hero-text toggle-theme">
-                <h2 class="toggle-theme">I'm Software Engineering Student</h2>
-                I'm Carlos Lespin, a graduate from Brigham Young University - Idaho. Passionate about full-stack engineering and mobile app development, I'm actively seeking internships to enhance my skills and contribute to cutting-edge projects.
-                <button class="hero-button toggle-theme">
+            <div class="hero-text">
+                <h2>I'm Software Engineering Student</h2>
+
+                <p>
+                    I'm Carlos Lespin, a graduate from Brigham Young University - Idaho. Passionate about full-stack engineering and mobile app development, I'm actively seeking internships to enhance my skills and contribute to cutting-edge projects.
+                </p>
+                
+                <button class="hero-button">
                     Look at my skills
                 </button>
             </div>
@@ -80,13 +85,15 @@
         </div>
 
 
-        <section class="about-me-section">
+        <section>
 
             <div class="section-text">
-                <div class="section-title"><strong>Background</strong></div>
-                <div class="section-description">
+                <h3>Background</h3>
+
+                <p>
                     I am currently a senior college student pursuing a Bachelor's degree in Software Engineering with a focus on Software Design and Web Development at Brigham Young University - Idaho.
-                </div>
+                </p>
+                
             </div>
 
             <img src="images/byui.png" alt="Brigham Young University - Idaho Logo">
@@ -94,27 +101,27 @@
 
         </section>
 
-        <section class="about-me-section">
+        <section>
 
             <img src="images/bitmap.png" alt="Brigham Young University - Idaho Logo">
 
             <div class="section-text">
-                <div class="section-title"><strong>Career Objectives</strong></div>
-                <div class="section-description">
-                    My aspiration is to establish a career as a proficient full-stack software engineer and mobile app developer, progressively advancing towards the role of a software architect. My objective is to acquire comprehensive expertise across all dimensions of software projects.                </div>
+                <h3>Career Objectives</h3>
+                <p>
+                    My aspiration is to establish a career as a proficient full-stack software engineer and mobile app developer, progressively advancing towards the role of a software architect.
+                </p>
+                
             </div>
-
-            
-        
 
         </section>
 
-        <section class="about-me-section">
+        <section>
 
             <div class="section-text">
-                <div class="section-title"><strong>Values</strong></div>
-                <div class="section-description">
-                    I am committed to continual self-improvement, driven by the desire to excel in my personal and professional endeavors. I prioritize the well-being and fulfillment of my family, friends, and colleagues. I embrace the value of being held accountable to high standards, as it inspires me to strive for excellence. I hold steadfast to the principles of truth and virtue.                </div>
+                <h3>Values</h3>
+                <p>
+                    I am committed to continual self-improvement, driven by the desire to excel in my personal and professional endeavors. I prioritize the well-being and fulfillment of my family, friends, and colleagues. I embrace the value of being held accountable to high standards, as it inspires me to strive for excellence. I hold steadfast to the principles of truth and virtue.              
+                </p>
             </div>
 
             <img src="images/books.JPG" alt="Brigham Young University - Idaho Logo">
@@ -125,13 +132,13 @@
         
 
 
-        <div class="app-window terminal">
+        <div class="app-window">
             <div class="window-header terminal">
               <span class="window-button exit"></span>
               <span class="window-button maximize"></span>
               <span class="window-button minimize"></span>
             </div>
-            <div class="window-content terminal">
+            <div class="window-content">
               <!-- Terminal content goes here -->
 
                 // README.md<br><br><br>
@@ -146,7 +153,10 @@
 
           <div id="faq">
 
-            <h2>FAQ</h2>
+
+
+
+            <h2 id="faq-title">FAQ</h2>
 
 
             <button class="question">What makes you a unique candidate?</button>
@@ -156,8 +166,9 @@
     
 
             <div class="answer-text">
-                <div class="section-title"><strong>Resilience</strong></div>
-                <div class="section-description">
+                <h3>Resilience</h3>
+                
+                <p>
                     What makes me a unique candidate is my proactiveness and ability to lead in challenging situations. I have strong skills in Python, C++, and Web Development, often outperforming my peers in these areas. My portfolio website and a Flutter app, which I chose to learn independently for my Senior Project, are testament to my design skills, adaptability, and commitment to learning new technologies.
 
                     <br><br>Even though I have not had formal internships or work experiences related to programming, I have taken the initiative to apply my knowledge in real-life situations, like creating a Web Scraping program to automate tasks at a previous job. This demonstrates my ability to think innovatively and use technology to improve efficiency.
@@ -168,7 +179,9 @@
                     
                     <br><br>Lastly, my philosophy when learning new technologies involves not just understanding the basics, but also actively engaging with the technology through practical exercises and referencing documentation.
                     
-                    <br><br>My experiences at Brigham Young University - Idaho have instilled in me a belief that I can master any technology or concept with dedication and practice. This mindset makes me a determined, adaptable, and resilient software engineer, ready to tackle any challenge and continuously grow in my career.                </div>
+                    <br><br>My experiences at Brigham Young University - Idaho have instilled in me a belief that I can master any technology or concept with dedication and practice. This mindset makes me a determined, adaptable, and resilient software engineer, ready to tackle any challenge and continuously grow in my career.             
+                </p>
+
             </div>
 
             <img src="images/byui.png" alt="Brigham Young University - Idaho Logo">
@@ -180,15 +193,17 @@
 <div class="answer">
 
     <div class="answer-text">
-        <div class="section-title"><strong>Discipline, quick learning, attention to detail, and negotiating.</strong></div>
-        <div class="section-description">
+        <h3>Discipline, quick learning, attention to detail, and negotiating.</h3>
+
+        <p>
             Through my academic coursework, I have developed strong programming foundations and
-problem-solving skills, including debugging code and implementing best programming practices. Working
-on personal projects has made me a fast learner and adept at reading documentation.
-My experience in sales has taught me the importance of listening and negotiating, which is crucial when
-collaborating with a team. My construction work experience has honed my ability to follow instructions and
-pay attention to detail.
-        </div>
+            problem-solving skills, including debugging code and implementing best programming practices. Working
+            on personal projects has made me a fast learner and adept at reading documentation.
+            My experience in sales has taught me the importance of listening and negotiating, which is crucial when
+            collaborating with a team. My construction work experience has honed my ability to follow instructions and
+            pay attention to detail.
+        </p>
+       
     </div>
 
     <img src="images/face.JPEG" alt="Carlos Lespin">
@@ -200,11 +215,15 @@ pay attention to detail.
 <div class="answer">
 
     <div class="answer-text">
-        <div class="section-title"><strong>Easy going, Positive, Friendly, Introverted.</strong></div>
-        <a class="personality" href="https://www.16personalities.com/intj-personality">(INTJ-A)</a>
-        <div class="section-description">
+
+        <h3>Easy going, Positive, Friendly, Introverted.</h3>
+
+        <a id="personality" href="https://www.16personalities.com/intj-personality">(INTJ-A)</a>
+
+        <p>
             Despite identifying as introverted, I excel in engaging in meaningful conversations and actively participating in meetings, sharing my insights and thoughts. My demeanor is consistently warm and inviting, often accompanied by a genuine smile. Anyone close to me can also tell you that nothing hurts me; I always like to keep a good attitude towards life.
-        </div>
+        </p>
+
     </div>
 
     <img src="images/me.JPG" alt="Carlos Lespin">
@@ -218,12 +237,16 @@ pay attention to detail.
     <!--<img src="images/pr-flag.png" alt="Puerto Rico Flag">-->
 
     <div class="answer-text">
-        <div class="section-title"><strong>Puerto Rico</strong></div>
-        <div class="section-description">
-            I was born and raised in Puerto Rico, a captivating island in the Caribbean. Growing up in a bilingual household, I had the opportunity to learn both Spanish and English. In recent years, my pursuits in education and career have led me to reside in both Florida and Idaho.        </div>
+        <h3>Puerto Rico</h3>
+
+        <p>
+            I was born and raised in Puerto Rico, a captivating island in the Caribbean. Growing up in a bilingual household, I had the opportunity to learn both Spanish and English. In recent years, my pursuits in education and career have led me to reside in both Florida and Idaho.     
+        </p>
+
     </div>
 
     <img src="images/beach.png" alt="Carlos Lespin as a baby at the beach.">
+
     
 
 </div>
@@ -233,37 +256,47 @@ pay attention to detail.
 <div class="answer">
 
     <div class="answer-text">
-        <div class="section-title"><strong>Reading</strong></div>
-        <div class="section-description">
+        <h3>Reading</h3>
+        <p>
             I aim to read books every day, particularly enjoying those in the genres of philosophy, business, and self-help. These books greatly contribute to my understanding of the world.
-        </div>
+        </p>
+
     </div>
 
     <img src="images/books.JPG" alt="Me holding a book">
 
     <div class="answer-text">
-        <div class="section-title"><strong>Gym</strong></div>
-        <div class="section-description">
+        <h3>Gym</h3>
+
+        <p>
             Working out daily is part of my routine. Even though I enjoy playing them, I'm not particularly good at any sport.
-        </div>
+
+        </p>
     </div>
 
     <img src="images/gym.jpeg" alt="Carlos Lespin sweating.">
 
     <div class="answer-text">
-        <div class="section-title"><strong>Dancing</strong></div>
-        <div class="section-description">
+
+        <h3>Dancing</h3>
+
+        <p>
             My girlfriend and I love to go out to dance any time we have a chance to. We enjoy latin and country swing dancing.
-        </div>
+        </p>
+
+       
     </div>
 
     <img src="images/jayme.jpeg" alt="Carlos Lespin and his girlfriend">
 
     <div class="answer-text">
-        <div class="section-title"><strong>New Things</strong></div>
-        <div class="section-description">
+
+        <h3>New Things</h3>
+
+        <p>
             My goal in life is to not be afraid of anything. I like to try out new things all the time.
-        </div>
+        </p>
+
     </div>
 
     <img src="images/skydiving.jpg" alt="Carlos Lespin going skydiving">
@@ -278,13 +311,7 @@ pay attention to detail.
 
 
 
-
-
-
-
-
-
-          </div>
+          </div> <!--Faq-->
 
                 
 
@@ -312,7 +339,7 @@ pay attention to detail.
     
     </main>
 
-    <footer class="toggle-theme">
+    <footer>
 
     </footer>
 

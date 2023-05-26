@@ -1,0 +1,226 @@
+
+
+.contact-main {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    padding-top: 10%;
+  }
+  
+
+
+  
+
+
+
+
+
+
+
+
+#send-message h1 {
+    text-align: center;
+}
+
+#send-message input, #send-message textarea {
+padding: 15px;
+border-radius: 13px;
+border-style: none;
+}
+
+.contact-main label {
+padding: 10px;
+}
+
+#send-message form {
+display: flex;
+flex-direction: column;
+}
+
+#send-message textarea {
+min-height: 150px;
+}
+
+#send-button {
+margin-top: 20px;
+background-color: #6ba1c4;
+}
+  
+
+
+
+
+
+body.dark section {
+    background-color: #6ba1c4;
+}
+
+
+
+  #contact-information {
+    height: 100%;
+  }
+  
+
+  #contact-information img {
+    width: 175px;
+    padding: 20px;
+  }
+  
+  
+  #information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  
+    justify-content: center;
+    text-align: right;
+    
+  }
+  
+  #information strong {
+    font-size: 20pt;
+  }
+  
+  
+  #link-code {
+    background-color: #6ba1c4;
+    border-radius: 15px;
+  }
+  
+  
+  
+  #information-top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #information-bottom-section {
+    background-color: #6ba1c4;
+    height: 1000px;
+    max-height: 259px;
+    margin: 30px -20px -20px -20px;
+    border-radius: 0px 0px 15px 15px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #information-bottom-section section {
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  #contact-methods {
+    display: flex;
+  }
+  
+  .contact-method {
+    margin: 10px;
+    padding: 7px 40px;
+    background-color: #a9c4d6;
+    border-radius: 30px;
+    height: min-content;
+  }
+  
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:924px){
+
+    /*CONTACT PAGE*/
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  #send-message {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #send-message form {
+    border-radius: 0;;
+  }
+
+  #send-message h1 {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .phone-view {
+    display:inline ;
+  }
+
+  #contact-information {
+    position: relative;
+    max-width: 100%;
+    background-color: #f5f5f7;
+  }
+
+  body.dark #contact-information {
+    background-color: #262626;
+  }
+
+  #information-bottom-section {
+    align-items: center;
+    border-radius: 0;
+  }
+
+  #contact-methods {
+    flex-direction: column;
+  }
+
+
+  .contact-method {
+    margin: 0;
+    margin-bottom: 4px;
+    width: max-content;
+    
+  }
+
+  #information-bottom-section {
+    background-color: #6ba1c4;
+    min-height: 200px;
+    margin: 30px 0px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .send-button {
+    margin-top: 20px;
+    background-color: #6ba1c4;
+  }
+  
+  .send-button {
+    height: 50px;
+  }
+
+}

@@ -1,0 +1,219 @@
+
+/* HERO */
+
+.hero {
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.hero-image {
+    max-width: 350px;
+    min-width: 250px;
+    width: 20%;
+    margin: 40px;
+    transition: 3s ease-in-out;
+}
+
+.hero-image:hover {
+    width: 21%;
+}
+
+.hero-text {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+  @media(max-width:924px){
+
+    .hero {
+      flex-direction: column;
+      margin-top: 11%;
+    }
+
+    .hero-text {
+        max-width: 80%;
+        text-align: center;
+    }
+
+
+    .app-window {
+        width: 95%;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sections */
+
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:min-content;
+    min-height: 250px;
+    background-color: #e2e6e9;
+    gap: 140px;
+    padding: 30px;
+  }
+
+  section img {
+    width: 200px;
+  }
+
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+  }
+
+
+/* Window box syling. DON'T EDIT */
+
+.app-window {
+    width: 55%;
+    min-height: 300px;
+    background-color: #262626;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+body.dark .app-window {
+  background-color: #404545;
+  
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #404040;
+}
+
+.window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.window-button.exit {
+    background-color: #fc605b;
+}
+
+.window-button.minimize {
+    background-color: #fecb52;
+}
+
+.window-button.maximize {
+    background-color: #2aca3e;
+}
+
+.window-content {
+    padding: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f7;
+}
+
+
+
+/* FAQ */
+
+#faq {
+  width: 100%;
+  text-align: center;
+}
+
+#faq h3 {
+  font-size: 35px;
+}
+
+#faq-title {
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+/* Style for question bars */
+.question {
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #e2e6e9;
+  transition: .4s ease-in-out;
+}
+
+.question:hover {
+  background-color: #c0c3c7;;
+}
+
+/* Style for answer section */
+.answer {
+  display: none;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative;
+  flex-direction: column;
+  padding: 100px;
+  gap: 50px;
+}
+
+.answer strong {
+  font-size: 30px;
+}
+
+.answer img {
+  width: 300px;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+
+
+/**/
+#personality {
+  transition: .4 ease-in-out;
+}
+
+#personality:hover {
+  color: #23a834;
+}

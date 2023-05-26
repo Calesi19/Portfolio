@@ -1,0 +1,264 @@
+
+
+/* RESUME PAGE */
+
+#profile-box {
+  background-color: #e2e6e9;
+  height: min-content;
+  width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body.dark #profile-box {
+    background-color: #383838;
+}
+
+
+#resume-profile-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#profile-box strong {
+  font-size: 23pt;
+}
+
+#profile-box button {
+  color: #1d1d1f;
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  align-items: center;
+  background-color: #cbdae6;
+}
+
+.button-icon {
+  margin-left: 30px;
+  width: 25px;
+  border-radius: 0;
+}
+
+
+
+
+
+#resume-main {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: start;
+}
+
+
+#resume-content {
+  min-height: 1000px;
+  /*background-color: #23a834;*/
+  width: 60%;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+#resume-content strong {
+  font-size: 30pt;
+}
+
+.document-button {
+  width: 49%;
+}
+
+
+
+
+#skills {
+  margin-top: 80px;
+}
+
+
+
+.box strong {
+  font-size: 18pt !important;
+}
+
+
+
+
+
+.job {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px;
+}
+.job-place {
+  font-weight: bold;
+  font-size: larger;
+}
+.job-time {
+  font-weight: lighter;
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#qr-code {
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+
+
+#skill-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.skill-column {
+  width: 50%;
+}
+
+.skill {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px;
+}
+
+.skill-title strong {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.skill-languages {
+  
+  height: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.skill-languages img {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:924px){
+
+/* RESUME PAGE */
+
+#resume-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-box {
+    width: 78%;
+    align-items: center;
+
+  }
+
+  #profile-box strong {
+    font-size: x-large;
+  }
+
+  #resume-profile-img {
+    max-width: 300px;
+    object-fit: cover;
+  }
+
+  #profile-box button {
+    padding: 15px;
+    width: 90%;
+  }
+
+
+  #resume-intro {
+    text-align: center;
+  }
+
+  #resume-briefing {
+    text-align: center;
+  }
+
+
+
+
+  #skills {
+    margin-top: 30px;
+  }
+
+  #resume-content {
+    width: 95%;
+  }
+
+  .document-button {
+    padding: 30px;
+    font-size: small;
+  }
+
+  #qr-code {
+    display: none;
+  }
+
+  #skill-columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-column {
+    width: 100%;
+  }
+
+
+}

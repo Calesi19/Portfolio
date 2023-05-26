@@ -58,10 +58,8 @@
 
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
-        console.log('night')
         setTheme('night');
     } else {
-        console.log('day')
         setTheme('day');
     }
 });
