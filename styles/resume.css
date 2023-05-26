@@ -37,11 +37,20 @@ body.dark #profile-box {
   background-color: #cbdae6;
 }
 
+
 .button-icon {
   margin-left: 30px;
   width: 25px;
   border-radius: 0;
 }
+
+#profile-box a button.hero-button {
+  width: 100%;
+}
+
+
+
+
 
 
 
@@ -203,7 +212,7 @@ body.dark #profile-box {
   }
 
   #profile-box {
-    width: 78%;
+    width: 90%;
     align-items: center;
 
   }
@@ -215,6 +224,10 @@ body.dark #profile-box {
   #resume-profile-img {
     max-width: 300px;
     object-fit: cover;
+  }
+
+  #profile-box a {
+    width: 100%;
   }
 
   #profile-box button {
@@ -271,6 +284,5 @@ ul li{
 ul span {
   font-weight: bolder;
 }
-
 
 
