@@ -168,6 +168,10 @@ body.dark .app-window {
   background-color: #c0c3c7;;
 }
 
+body.dark .question:hover {
+  background-color: #404040;
+}
+
 /* Style for answer section */
 .answer {
   display: none;
