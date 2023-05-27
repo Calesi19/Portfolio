@@ -40,7 +40,9 @@ const languageMap = {
   "dynamodb" : ["DynamoDB", "green"],
   "dart": ["Dart", "blue"],
   "beautifulsoup" : ["BeautifulSoup", "green"],
-  "web-scraping" : ["Web Scraping", "pink"]
+  "web-scraping" : ["Web Scraping", "pink"],
+  "nodejs" : ["Node.js", "green"],
+  "expressjs" : ["Express.js", "purple"]
 };
 
 // Map of color names to color codes
