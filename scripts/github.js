@@ -42,7 +42,9 @@ const languageMap = {
   "beautifulsoup" : ["BeautifulSoup", "green"],
   "web-scraping" : ["Web Scraping", "pink"],
   "nodejs" : ["Node.js", "green"],
-  "expressjs" : ["Express.js", "purple"]
+  "express" : ["Express.js", "purple"],
+  "expressjs" : ["Express.js", "purple"],
+  "go" : ["Go", "lavender"]
 };
 
 // Map of color names to color codes
