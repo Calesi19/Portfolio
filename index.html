@@ -354,6 +354,47 @@
         }
     </script>
 
+    <script>
+        var codeSnippets = [
+    "Python:\n\nprint('Hello, World!')\n\n-------------\n",
+    "JavaScript:\n\nconsole.log('Hello, World!');\n\n-------------\n",
+    "C++:\n\n#include <iostream>\n\nint main() {\n    std::cout << 'Hello, World!';\n    return 0;\n}\n\n-------------\n",
+    "Dart:\n\nvoid main() {\n    print('Hello, World!');\n}\n\n-------------\n"
+];
+
+var currentSnippet = 0;
+var currentChar = 0;
+var isDeleting = false;
+
+function typeSnippet() {
+    var terminal = document.querySelector(".window-content");
+
+    if (!isDeleting && currentChar < codeSnippets[currentSnippet].length) {
+        terminal.textContent += codeSnippets[currentSnippet][currentChar];
+        currentChar++;
+        setTimeout(typeSnippet, 60);
+    } else if (isDeleting && currentChar > 0) {
+        terminal.textContent = terminal.textContent.slice(0, -1);
+        currentChar--;
+        setTimeout(typeSnippet, 60);
+    } else if (!isDeleting && currentChar === codeSnippets[currentSnippet].length) {
+        isDeleting = true;
+        setTimeout(typeSnippet, 2000);
+    } else if (isDeleting && currentChar === 0) {
+        isDeleting = false;
+        currentSnippet = (currentSnippet + 1) % codeSnippets.length;
+        setTimeout(typeSnippet, 500);
+    }
+}
+
+window.onload = typeSnippet;
+
+
+
+
+
+    </script>
+
 
 
 </body>
