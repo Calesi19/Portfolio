@@ -44,7 +44,8 @@ const languageMap = {
   "nodejs" : ["Node.js", "green"],
   "express" : ["Express.js", "purple"],
   "expressjs" : ["Express.js", "purple"],
-  "go" : ["Go", "lavender"]
+  "go" : ["Go", "lavender"],
+  "supabase" : ["Supabase", "green"]
 };
 
 // Map of color names to color codes
